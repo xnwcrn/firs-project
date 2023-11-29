@@ -1,0 +1,286 @@
+@import url(font.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Raleway-Regular';
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+nav{
+    background: black;
+    border-bottom: 1px solid white;
+}
+
+.nav__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__navigation-mini{
+    display: flex;
+    align-items: center;
+}
+
+.nav__navigation-title{
+    color: white;
+    font-family: 'Roboto-Regular';
+    line-height: 19px;
+    margin-left: 5px;
+}
+
+.ul__list{
+    display: flex;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+
+
+.ul__list-link{
+    color: white;
+    line-height: 19px;
+    font-family: 'Roboto-Regular';
+}
+
+.ul__menu{
+    column-gap: 0;
+    padding: 0;
+}
+
+.ul__link{
+    display: inline-block;
+    padding: 22px 14px;
+    transition: 0.5s;
+}
+
+
+.ul__link:hover{
+    background: rgba(105, 207, 23, 0.75);
+}
+
+
+.header{
+    background: url(../img/header__bg.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+
+h1{
+    color:  #69CF17;
+    font-size: 72px;
+    font-family: 'Raleway-Black';
+    line-height: 84px;
+    padding: 167px 0 18px;
+}
+
+h3{
+    font-size: 36px;
+    line-height: 17px;
+    color:  #69CF17;
+}
+
+.header__text{
+    padding: 18px 0 30px;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__box-first{
+    background: rgba(105, 207, 23, 0.5);
+    padding: 33px 76px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Raleway-Thin';
+}
+
+
+.header__box-second{
+  padding: 15px 70px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+  color: white; 
+  font-size: 18px; 
+}
+
+
+
+.box{
+    background: black;
+    height: 48px;
+}
+
+
+.menu{
+    background: #292929;
+}
+
+.menu__ul{
+    margin-left: 21px;
+    display: flex;
+    column-gap: 30px;
+}
+
+
+.menu__ul-list{
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.menu__ul-list::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: 0.5s;
+    bottom: 0;
+}
+
+.menu__ul-list:hover::before{
+    width: 100%;
+}
+
+
+.cards__card{
+    max-width: 370px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+    background: #0C0C0C;
+} 
+
+
+
+.cards__card-icon{
+    position: relative;
+}
+
+.cards__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 207, 23, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.cards__card-link:hover{
+    opacity: 1;
+
+}
+
+.fa{
+    color: white;
+}
+
+
+.cards{
+    background: #393636;
+    padding: 15px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cards__card-img{
+    display: block;
+    width: 100%;
+}
+
+.card__icon-title{
+    font-family: 'Raleway-Bold';
+    padding: 15px 0;
+    font-size: 19px;
+    line-height: 15px;
+}
+
+
+.card__icon-text{
+    font-size: 19px;
+    line-height: 25px;
+}
+
+
+.block__title{
+    text-align: center;
+    font-family: 'Raleway-Bold';
+    font-size: 50px;
+    color: #69CF17;
+    padding: 20px 0;
+}
+
+
+.footer{
+    background: linear-gradient(180deg, #000000 0%, rgba(115, 255, 0, 0.536) 100%);
+
+
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30 0 81px;
+
+}
+
+.footer__box-number{
+    font-family: 'Roboto-Bold';
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 81px;
+    column-gap: 20px;
+}
+
+.footer__list-link{
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Roboto-Regular';
+}
+
+
+.footer__text{
+    color: white;
+    padding: 19px 0;
+    font-family: 'Roboto-Regular';
+    background: #1A3406;
+    text-align: center;
+}
